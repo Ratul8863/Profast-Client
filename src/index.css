@@ -3,9 +3,17 @@
 
 
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+   themes: light --default, dark ;
+ }
 
-
+ @plugin "daisyui/theme" {
+  name: "dark";
+  default: true;
+  --color-primary: #03373D;
+  --color-secondary: #CAEB66;
+  
+}
 
 .font-urbanist {
   font-family: "Urbanist", sans-serif;
