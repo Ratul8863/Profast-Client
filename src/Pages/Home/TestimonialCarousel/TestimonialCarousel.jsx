@@ -106,7 +106,7 @@ const TestimonialCarousel = () => {
       </Swiper>
 
       {/* Custom Navigation Arrows */}
-      <div className="flex justify-around  max-w-60 border border-black mx-auto">
+      <div className="flex justify-around  max-w-60 border  mx-auto">
         <div className="swiper-button-prev-custom  cursor-pointer w-6 h-6 rounded-full bg-gray-300 flex items-center justify-center transition-colors duration-300 hover:bg-gray-400">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
