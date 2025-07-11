@@ -85,7 +85,7 @@ const TestimonialCarousel = () => {
           <SwiperSlide key={item.id}>
             {({ isActive }) => (
               <div
-                className={`bg-white rounded-lg shadow-lg transition-all duration-300 ease-in-out p-8 relative flex flex-col justify-between h-full ${
+                className={`bg-white rounded-lg  transition-all duration-300 ease-in-out p-8 relative flex flex-col justify-between h-full ${
                   isActive ? 'scale-110 translate-y-[-2rem] z-10' : 'opacity-60'
                 }`}
                 style={{ minHeight: '280px' }}
