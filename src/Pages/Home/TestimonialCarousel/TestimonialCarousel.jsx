@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './TestimonialCarousel.css'; // We'll create this file for custom styles
+import { FaArrowRight } from 'react-icons/fa';
 
 const testimonials = [
   {
@@ -106,18 +107,16 @@ const TestimonialCarousel = () => {
 
       {/* Custom Navigation Arrows */}
       <div className="flex justify-around  max-w-60 border border-black mx-auto">
-        <div className="swiper-button-prev-custom  cursor-pointer w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center transition-colors duration-300 hover:bg-gray-400">
+        <div className="swiper-button-prev-custom  cursor-pointer w-6 h-6 rounded-full bg-gray-300 flex items-center justify-center transition-colors duration-300 hover:bg-gray-400">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
         </div>
         {/* Custom Pagination Dots */}
-        <div className="  space-x-2"></div>
+        <div className="swiper-pagination-custom  space-x-2"></div>
         {/* Right side  */}
         <div className="swiper-button-next-custom cursor-pointer w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center transition-colors duration-300 hover:bg-teal-700">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
+         <FaArrowRight />
         </div>
       </div>
     </div>

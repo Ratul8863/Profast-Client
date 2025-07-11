@@ -4,7 +4,7 @@
   position: static !important; /* Override Swiper's absolute positioning */
   margin: 0 !important; /* Remove default margins */
   transform: none !important; /* Remove default transform */
-  width: 48px; /* Custom width */
+  width: 80px; /* Custom width */
   height: 48px; /* Custom height */
   border-radius: 50%; /* Make them circular */
   display: flex;
@@ -36,7 +36,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem; /* Adjust as needed */
+  /* margin-top: 1rem; Adjust as needed */
 }
 
 .swiper-pagination-custom .swiper-pagination-bullet {
