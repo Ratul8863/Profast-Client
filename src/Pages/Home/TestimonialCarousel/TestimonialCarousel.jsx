@@ -5,7 +5,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './TestimonialCarousel.css'; // We'll create this file for custom styles
-import { FaArrowRight } from 'react-icons/fa';
 
 const testimonials = [
   {
