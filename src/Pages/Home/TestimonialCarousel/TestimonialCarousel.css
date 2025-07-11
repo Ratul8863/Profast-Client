@@ -1,0 +1,67 @@
+/* Custom styles for Swiper navigation */
+.swiper-button-next-custom,
+.swiper-button-prev-custom {
+  position: static !important; /* Override Swiper's absolute positioning */
+  margin: 0 !important; /* Remove default margins */
+  transform: none !important; /* Remove default transform */
+  width: 48px; /* Custom width */
+  height: 48px; /* Custom height */
+  border-radius: 50%; /* Make them circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+}
+
+.swiper-button-next-custom {
+  background-color: #047857; /* Teal 600 */
+  color: white;
+}
+
+.swiper-button-prev-custom {
+  background-color: #d1d5db; /* Gray 300 */
+  color: white;
+}
+
+/* Hide Swiper's default navigation arrows */
+.testimonial-swiper .swiper-button-next,
+.testimonial-swiper .swiper-button-prev {
+  display: none !important;
+}
+
+/* Custom styles for Swiper pagination */
+.swiper-pagination-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem; /* Adjust as needed */
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet {
+  background-color: #d1d5db; /* Gray 300 for inactive */
+  opacity: 1; /* Ensure full opacity for inactive */
+  width: 10px; /* Custom size */
+  height: 10px; /* Custom size */
+  transition: background-color 0.3s ease;
+  margin: 0 4px; /* Space between dots */
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet-active {
+  background-color: #047857; /* Teal 600 for active */
+  width: 12px; /* Slightly larger for active */
+  height: 12px;
+}
+
+/* Adjust position of the navigation buttons to be below the carousel */
+.testimonial-swiper {
+  padding-bottom: 2rem; /* Add padding to make space for the custom pagination/navigation if they overlap */
+}
+
+/* Ensure testimonials are not clipped by the container */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

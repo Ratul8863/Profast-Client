@@ -4,6 +4,7 @@ import OurServices from '../Services/OurServices'
 import ClientLogos from '../ClientLogos/ClientLogos'
 import Benefits from '../Benifits/Benefits'
 import Bemarchent from '../Bemarchent/Bemarchent'
+import TestimonialCarousel from '../TestimonialCarousel/TestimonialCarousel'
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <ClientLogos></ClientLogos>
       <Benefits></Benefits>
       <Bemarchent></Bemarchent>
+      <TestimonialCarousel></TestimonialCarousel>
     </div>
   )
 }
