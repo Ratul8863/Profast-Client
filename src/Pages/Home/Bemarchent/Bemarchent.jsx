@@ -1,13 +1,14 @@
 import React from 'react'
 import location from "../../../assets/location-merchant.png"
 
+
 function Bemarchent() {
   return (
-    <div className="hero bg-base-200 p-20 rounded-4xl bg-primary">
+    <div data-aos="zoom-in-up"  className="  p-20 rounded-4xl bg-primary bg-no-repeat bg-[url(assets/be-a-merchant-bg.png)]" >
   <div className="hero-content flex-col lg:flex-row-reverse">
     <img
       src={location}
-      className="max-w-sm rounded-lg shadow-2xl"
+      className="max-w-sm rounded-lg"
     />
     <div>
       <h1 className="text-5xl font-bold">Merchant and Customer Satisfaction is Our First Priority</h1>
