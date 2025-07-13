@@ -1,6 +1,8 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import useAuth from '../../Hooks/useAuth'
+import { Link } from 'react-router';
+import GoogleLogin from './Social/GoogleLogin';
 
 function Register() {
   
@@ -29,6 +31,7 @@ console.log(result.user)
       } 
   return (
     <div> 
+      <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
          <form action="" onSubmit={handleSubmit(onSubmit)}>
             <div className="card-body" >
         <fieldset className="fieldset">
@@ -48,11 +51,13 @@ console.log(result.user)
 
           <div><a className="link link-hover">Forgot password?</a></div>
 
-          <button className="btn btn-neutral mt-4">Login</button>
+          <button className="btn text-black btn-secondary mt-4">Register</button>
         </fieldset>
+        <p>Already have an account? <Link to={'/login'} className='text-secondary btn btn-link p-0 border border-white h-fit'>Login</Link></p>
       </div>
         </form>
-
+           <GoogleLogin></GoogleLogin>
+</div>
     </div>
   )
 }
