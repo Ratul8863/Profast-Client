@@ -1,17 +1,18 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 
-function Login() {
-     const {
-    register,
-     formState: { errors },
-    handleSubmit,
-  } = useForm()
-
-  const onSubmit = (data) => console.log(data)
+function Register() {
+  
+         const {
+        register,
+         formState: { errors },
+        handleSubmit,
+      } = useForm()
+    
+      const onSubmit = (data) => console.log(data)
   return (
     <div> 
-        <form action="" onSubmit={handleSubmit(onSubmit)}>
+         <form action="" onSubmit={handleSubmit(onSubmit)}>
             <div className="card-body" >
         <fieldset className="fieldset">
 
@@ -34,8 +35,10 @@ function Login() {
         </fieldset>
       </div>
         </form>
-      </div>
+
+    </div>
   )
 }
 
-export default Login
+
+export default Register
