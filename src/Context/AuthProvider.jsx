@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { AuthContext } from './AuthContext'
 import { auth } from '../Firebase/firebase.init'
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth'
@@ -22,7 +22,7 @@ const logout = () =>{
   return signOut(auth)
 }
 
-useeffect (()=>{
+useEffect (()=>{
   const unsubscribe = onAuthStateChanged(auth, currentUser => {
     setUser(currentUser)
     setLoading(false);
